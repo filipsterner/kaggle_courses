@@ -46,9 +46,29 @@ x.setflags(write=True, align=True, uic=False)
 x.fill(1)
 print(x)
 
-https://numpy.org/doc/stable/reference/arrays.ndarray.html#shape-manipulation
 
+print(x.reshape((3,2)))
+x.resize((5,5))
+print(x)
+
+x = np.array([[[0,1],[2,3]],[[4,5],[6,7]]])
+print(x.swapaxes(0,2))
+print(x.ndim)
+print(x.flatten())
+print(x.ravel())
+x = np.array([[1, 2, 3]], np.int32)
+print(x.shape)
+print(x.squeeze())
+
+
+https://numpy.org/doc/stable/reference/arrays.ndarray.html#item-selection-and-manipulation
 '''
 
 x = np.array([[1, 2, 3], [4, 5, 1056]], np.int32)
 
+print(x.take((2,3,5)))
+x.put((0, 2, 5), (10, 9, 8))
+print(x)
+print(x.repeat(3))
+y = np.array([0]).choose(x)
+print(y)
