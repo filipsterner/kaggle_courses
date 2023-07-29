@@ -61,10 +61,6 @@ print(x.shape)
 print(x.squeeze())
 
 
-https://numpy.org/doc/stable/reference/arrays.ndarray.html#item-selection-and-manipulation
-'''
-
-x = np.array([[1, 2, 3], [4, 5, 1056]], np.int32)
 
 print(x.take((2,3,5)))
 x.put((0, 2, 5), (10, 9, 8))
@@ -72,3 +68,28 @@ print(x)
 print(x.repeat(3))
 y = np.array([0]).choose(x)
 print(y)
+
+x = np.array([[8, 3475, 2184], [4, 1239, 1056]])
+print(x)
+x.sort(axis=0)
+x.sort()
+print(x)
+
+x = np.array([[8, 3475, 2184], [6034, 1239, 1056]])
+print(x.argsort(axis=0))
+print(x.argsort())
+x.partition((1,2))#UHHH
+
+x = np.array([8, 0, 2184])
+print(x.searchsorted(203))
+print(x.nonzero())
+x = np.array([[8, 3475, 2184], [6034, 1239, 1056]])
+print(x.compress([1,5,3]))#????????
+
+x = np.array([[5483, 42923, 120938], [8, 3475, 2184], [6034, 1239, 1056]])
+print(x.diagonal())
+
+
+https://numpy.org/doc/stable/reference/arrays.ndarray.html#calculation
+'''
+

@@ -3,8 +3,7 @@ Speedrunning API's.
 ## Python
 - [ ] NumPy
 - [ ] Pandas
-- [ ] Matplotlib
-- [ ] Seaborn
+- [ ] Matplotlib/Seaborn?
 - [ ] TensorFlow
 - [ ] Keras
 - [ ] ???
